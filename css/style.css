@@ -1,0 +1,400 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Microsoft YaHei;
+    font-size: ;
+}
+
+p,
+td,
+li {
+    color: #ffffff;
+}
+
+
+.title,.row-date,.row-obj,.row-act,.table,.rules,.rules-terms>div:nth-child(2),.footer{
+	display: none;
+}
+
+.container,
+.bg2,
+.title,
+.date,
+.active-obj,
+.act,
+.rules,
+.phone,
+.phone-connection {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.container {
+    background-image: url('../img/bg.jpg');
+    width: 100%;
+    height: 100%;
+    background-attachment: fixed;
+    background-color: black;
+    /* min-width: 1635px; */
+    /* min-height: 969px; */
+}
+
+.wrapper {
+    width: 1400px;
+    height: 100%;
+    /* border: 1px solid white; */
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 10;
+}
+
+.phone{
+
+	/* background-image: url('../img/mate/1.png'); */
+	    left: 722px;
+    top: 213px;
+      -webkit-transition:all 1.4s ease-in-out;
+    -o-transition:all 1.4s ease-in-out;
+    -moz-transition:all 1.4s ease-in-out;
+    z-index: 3;
+}
+.phone >img{
+		width: 550px;
+	height: 550px;
+
+}
+.phone-connection{
+		    width: 418px;
+    height: 336px;
+    background-image: url(../img/fivr-g.png);
+    left: 1083px;
+    top: 129px;
+    z-index: 2;
+}
+
+.title {
+    position: relative;
+    background-image: url('../img/title.png');
+       width: 400px;
+    height: 122px;
+    left: 126px;
+    top: 56px;
+    /* margin-top: 56px; */
+}
+
+.event-date {
+    position: relative;
+    /* border: 1px solid white; */
+       margin-top: 89px;
+}
+
+.row-date {
+    position: relative;
+    /* border: 1px solid green; */
+}
+
+.date,
+.active-obj,
+.act,
+.rules {
+    background-image: url('../img/object.png');
+    width: 169px;
+    height: 42px;
+}
+
+.date,
+.active-obj,
+.act,
+.row-obj>p,
+.row-date>p,
+.row-act>p {
+    display: inline-block;
+    position: relative;
+    margin-right: 26px;
+}
+
+.date>p,
+.active-obj>p,
+.act>p,
+td {
+    font-size: 13pt;
+    line-height: 42px;
+}
+
+.date>p,
+.active-obj>p,
+.act>p {
+    text-align: center;
+    left: -12px;
+    position: relative;
+}
+
+.row-date>p,
+.row-act>p {
+    font-size: 17px;
+}
+
+.row-act {
+    margin-top: 26px;
+}
+
+.row-obj {
+    margin-top: 26px;
+}
+
+.row-act>p:last-child {
+    left: 200px;
+}
+
+.rules>p {
+    font-size: 13pt;
+    position: relative;
+    text-align: center;
+    left: -15px;
+    top: 8px;
+}
+
+.table {
+    margin-top: 32px;
+}
+
+.rules-terms {
+    margin-top: 28px;
+    width: 367px;
+}
+
+.rules-terms>div:nth-child(2) {
+    margin-top: 22px;
+    position: relative;
+    top: 66px;
+    left: 24px;
+}
+
+
+table {
+    width: 720px;
+    /* border-collapse: collapse; */
+}
+
+thead {
+    background-color: #2c6fa8;
+}
+
+td {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #2c6fa8;
+}
+
+li {
+    padding-left: 9px;
+    font-size: 17px;
+    line-height: 30px;
+     text-align: justify;
+}
+
+.footer {
+    bottom: 22px;
+    left: 35%;
+    position: absolute;
+    -webkit-transform: translateX(-50%);
+       -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+         -o-transform: translateX(-50%);
+            transform: translateX(-50%);
+
+}
+
+.footer>p {
+    font-size: 12pt;
+    text-align: center
+}
+
+
+.slide-in-left {
+	-webkit-animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: slide-in-left 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slide-in-left {
+  0% {
+    -webkit-transform: translateX(-1000px);
+            transform: translateX(-1000px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.scale-in-center {
+	-webkit-animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: scale-in-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+
+@-webkit-keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes scale-in-center {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#smoke-effect-canvas{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+}
+
+/* fairy dust */
+
+#canvas{
+	position: fixed;
+	z-index: 15;
+/* 	width: 100%;
+	height: 100%; */
+	left: 0;
+	top: 0;
+}
+
+
+@media only screen and (max-width: 1600px){
+
+    .row-act,.row-obj {
+        margin-top: 25px;
+    }
+
+    table{
+        width: 565px;
+            margin-top: 18px;
+    }
+
+    td{
+        padding: 0;
+            line-height: 42px;
+    }
+
+    .table {
+    margin-top: 25px;
+}
+
+    .rules-terms {
+    margin-top: 20px;
+    }
+
+    .phone{
+       left: 556px;
+    }
+
+    .phone-connection {
+           width: 277px;
+    height: 238px;
+        left: 937px;
+        top: 169px;
+    }
+    .title{
+        top:41px;
+    }
+    .event-date{
+            margin-top: 68px;
+    }
+    li{
+            line-height: 27px;
+
+    }
+    .wrapper{
+        width: 1200px
+    }
+
+}
+
+
+@media only screen and (max-width: 1366px){
+    .wrapper{
+        width: 1200px
+    }
+
+    .row-act,.row-obj {
+        margin-top: 17px;
+    }
+
+    table{
+        width: 565px;
+            margin-top: 18px;
+    }
+
+    td{
+        padding: 0;
+            line-height: 31px;
+    }
+
+    .table {
+    margin-top: 20px;
+}
+
+    .rules-terms {
+    margin-top: 24px;
+
+    }
+
+    .phone{
+       left: 522px;
+    }
+
+    .phone-connection {
+           width: 277px;
+    height: 238px;
+        left: 897px;
+        top: 169px;
+    }
+    .title{
+        top:41px;
+    }
+    .event-date{
+            margin-top: 68px;
+    }
+    li{
+            line-height: 30px;
+    }
+}
